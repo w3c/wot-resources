@@ -7,7 +7,7 @@ TD 1.1 contains JSON-LD context, JSON Schemas for TDs and TMs and also ontology 
 | W3C URL | GitHub URL to redirect to | Content Type | Note |
 | ------- | ---------- | ------------ |
 | `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.ttl` | `text/turtle` | |
-| `https://www.w3.org/2019/wot/td` (same as above) | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.html` | `text/html` |  same as above but different content type |
+| `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.html` | `text/html` |  same as above but different content type |
 | `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/json-schema.ttl` | `text/turtle` | |
 | `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/jsonschema.html` | `text/html`| same as above but different content type |
 | `https://www.w3.org/2019/wot/security` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/wotsec.ttl` | `text/turtle` | |
