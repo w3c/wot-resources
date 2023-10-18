@@ -9,10 +9,20 @@ as a relative URL, e.g. "context/discovery-core.jsonld" can be found at
 [https://w3c.github.io/wot-resources/discovery/v1/context/discovery-core.jsonld](https://w3c.github.io/wot-resources/discovery/v1/context/discovery-core.jsonld).
 
 ## Publication Mapping
-| File | Published URL | Content-Type |
+| Published URL | File | Content-Type |
 | --- | --- | --- |
-| [context/discovery-core.jsonld](https://w3c.github.io/wot-resources/discovery/v1/context/discovery-core.jsonld) | https://www.w3.org/2022/wot/discovery | application/ld+json; charset=utf-8 |
-| [context/discovery-did.jsonld](https://w3c.github.io/wot-resources/discovery/v1/context/discovery-did.jsonld) | https://www.w3.org/2022/wot/discovery-did | application/ld+json; charset=utf-8 |
-| [ontology/discovery-ontology.ttl](https://w3c.github.io/wot-resources/discovery/v1/ontology/discovery-ontology.ttl) | https://www.w3.org/2022/wot/discovery-ontology | text/turtle; charset=utf-8 |
-| [model/directory.tm.jsonld](https://w3c.github.io/wot-resources/discovery/v1/model/directory.tm.jsonld) | https://www.w3.org/2022/wot/discovery/model/directory | application/tm+json; charset=utf-8 |
-| [validation/td-discovery-extensions-json-schema.json](https://w3c.github.io/wot-resources/discovery/v1/validation/td-discovery-extensions-json-schema.json) | https://www.w3.org/2022/wot/discovery/validation/td-discovery-extensions-json-schema | application/json; charset=utf-8 |
+| https://www.w3.org/2022/wot/discovery 
+   | [context/discovery-core.jsonld](https://w3c.github.io/wot-resources/discovery/v1/context/discovery-core.jsonld) 
+   | application/ld+json; charset=utf-8 |
+| https://www.w3.org/2022/wot/discovery-did 
+   | [context/discovery-did.jsonld](https://w3c.github.io/wot-resources/discovery/v1/context/discovery-did.jsonld) 
+   | application/ld+json; charset=utf-8 |
+| https://www.w3.org/2022/wot/discovery-ontology 
+   | [ontology/discovery-ontology.ttl](https://w3c.github.io/wot-resources/discovery/v1/ontology/discovery-ontology.ttl) 
+   | text/turtle; charset=utf-8 |
+| https://www.w3.org/2022/wot/discovery/model/directory 
+   | [model/directory.tm.jsonld](https://w3c.github.io/wot-resources/discovery/v1/model/directory.tm.jsonld) 
+   | application/tm+json; charset=utf-8 |
+| https://www.w3.org/2022/wot/discovery/validation/td-discovery-extensions-json-schema 
+   | [validation/td-discovery-extensions-json-schema.json](https://w3c.github.io/wot-resources/discovery/v1/validation/td-discovery-extensions-json-schema.json) 
+   | application/json; charset=utf-8 |
