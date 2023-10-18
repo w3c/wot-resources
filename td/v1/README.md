@@ -6,7 +6,7 @@ TD 1.0 only contains the context file and the JSON Schema for validation.
 Ontology files are simply taken over by the 1.1 version and they can be used by TD 1.0 users.
 
 | W3C URL | GitHub URL to redirect to | Content Type | Note |
-| ------- | ---------- | ------------ |
+| ------- | ---------- | ------------ | ------------ |
 | `https://www.w3.org/2019/wot/td-schema/v1` | `https://w3c.github.io/wot-resources/td/v1/validation/td-json-schema-validation.json` | `application/json`| |
 | `https://www.w3.org/2019/wot/td/v1` | `https://w3c.github.io/wot-resources/td/v1/context/td-context-1.1.jsonld` | `application/ld+json` | |
 

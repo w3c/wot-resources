@@ -5,7 +5,7 @@ Folder for resources that are next to the specification such as ontologies, cont
 TD 1.1 contains JSON-LD context, JSON Schemas for TDs and TMs and also ontology files that are shared by TD 1.0 and TD 2.0 users.
 
 | W3C URL | GitHub URL to redirect to | Content Type | Note |
-| ------- | ---------- | ------------ |
+| ------- | ---------- | ------------ | ------------ |
 | `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.ttl` | `text/turtle` | |
 | `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.html` | `text/html` |  same as above but different content type |
 | `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/json-schema.ttl` | `text/turtle` | |
