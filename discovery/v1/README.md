@@ -15,5 +15,5 @@ as a relative URL, e.g. "context/discovery-core.jsonld" can be found at
 | https://www.w3.org/ns/wot/discovery/v1/did | [did.jsonld](https://w3c.github.io/wot-resources/discovery/v1/did.jsonld) | application/ld+json; charset=utf-8 |
 | https://www.w3.org/ns/wot/discovery/v1/ontology | [ontology.ttl](https://w3c.github.io/wot-resources/discovery/v1/ontology.ttl) | text/turtle; charset=utf-8 |
 |                                                 | [ontology.html](https://w3c.github.io/wot-resources/discovery/v1/ontology.html) | text/html; charset=utf-8 |
-| https://www.w3.org/ns/wot/discovery/v1/directory | [model/directory.tm.jsonld](https://w3c.github.io/wot-resources/discovery/v1/directory.tm.jsonld) | application/tm+json; charset=utf-8 |
-| https://www.w3.org/ns/wot/discovery/v1/extension-schema | [validation/extension-schema.json](https://w3c.github.io/wot-resources/discovery/v1/extension-schema.json) | application/json; charset=utf-8 |
+| https://www.w3.org/ns/wot/discovery/v1/directory | [directory.tm.jsonld](https://w3c.github.io/wot-resources/discovery/v1/directory.tm.jsonld) | application/tm+json; charset=utf-8 |
+| https://www.w3.org/ns/wot/discovery/v1/extension-schema | [extension-schema.json](https://w3c.github.io/wot-resources/discovery/v1/extension-schema.json) | application/json; charset=utf-8 |
