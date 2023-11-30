@@ -9,7 +9,7 @@ Ontology files are simply taken over by the 1.1 version and they can be used by 
 | ------- | ---------- | ------------ | ------------ |
 | `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.ttl` | `text/turtle` | |
 | `https://www.w3.org/2019/wot/td` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/td.html` | `text/html` |  same as above but different content type |
-| `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/json-schema.ttl` | `text/turtle` | |
+| `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/jsonschema.ttl` | `text/turtle` | |
 | `https://www.w3.org/2019/wot/json-schema` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/jsonschema.html` | `text/html`| same as above but different content type |
 | `https://www.w3.org/2019/wot/security` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/wotsec.ttl` | `text/turtle` | |
 | `https://www.w3.org/2019/wot/security` | `https://w3c.github.io/wot-resources/td/v1.1/ontology/wotsec.html` | `text/html`|  same as above but different content type |
