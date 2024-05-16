@@ -15,6 +15,10 @@
 
 # Web of Things (WoT) Resources
 
+General information about the Web of Things can be found on https://www.w3.org/WoT/.
+  
+---
+
 Repository for the resources like ontologies for WoT specifications.
 
 * [TD v1](td/v1/README.md)
