@@ -10,8 +10,8 @@ Currently, these resources are JSON-LD context, JSON Schemas for TDs and TMs and
 | `https://www.w3.org/ns/wot-next/td` | `https://w3c.github.io/wot-thing-description/context/td-context-1.1.jsonld` | `application/ld+json`| |
 | `https://www.w3.org/ns/wot-next/tm-ontology` | `https://w3c.github.io/wot-thing-description/ontology/tm.ttl` | `text/turtle`| |
 | `https://www.w3.org/ns/wot-next/tm-ontology` | `https://w3c.github.io/wot-thing-description/ontology/tm.html` | `text/html`| |
-| `https://www.w3.org/ns/wot-next/td-ontology` | `https://w3c.github.io/wot-thing-description/ontology/td.html` | `text/turtle` | |
-| `https://www.w3.org/ns/wot-next/td-ontology` | `https://w3c.github.io/wot-thing-description/ontology/tm.html` | `text/html` |  same as above but different content type |
+| `https://www.w3.org/ns/wot-next/td-ontology` | `https://w3c.github.io/wot-thing-description/ontology/td.ttl` | `text/turtle` | |
+| `https://www.w3.org/ns/wot-next/td-ontology` | `https://w3c.github.io/wot-thing-description/ontology/td.html` | `text/html` |  same as above but different content type |
 | `https://www.w3.org/ns/wot-next/json-schema-ontology` | `https://w3c.github.io/wot-thing-description/ontology/jsonschema.ttl` | `text/turtle` | |
 | `https://www.w3.org/ns/wot-next/json-schema-ontology` | `https://w3c.github.io/wot-thing-description/ontology/jsonschema.html` | `text/html`| same as above but different content type |
 | `https://www.w3.org/ns/wot-next/security-ontology` | `https://w3c.github.io/wot-thing-description/ontology/wotsec.ttl` | `text/turtle` | |
