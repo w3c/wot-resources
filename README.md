@@ -20,7 +20,14 @@ General information about the Web of Things can be found on https://www.w3.org/W
 ---
 
 Repository for the resources like ontologies for WoT specifications.
+The redirection rules are managed at <https://github.com/w3c/ns>.
+
+## Stable resources:
 
 * [TD v1](td/v1/README.md)
 * [TD v1.1](td/v1.1/README.md)
 * [Discovery v1](discovery/v1/README.md)
+
+## Unstable resources:
+
+* [TD next](https://github.com/w3c/wot-resources/tree/main/td/next): Note that this only contains the redirection rules and not the resources themselves.
