@@ -31,3 +31,23 @@ The redirection rules are managed at <https://github.com/w3c/ns>.
 ## Unstable resources:
 
 * [TD next](https://github.com/w3c/wot-resources/tree/main/td/next): Note that this only contains the redirection rules and not the resources themselves.
+
+## Testing redirects
+
+A test script verifies that the W3C redirect URLs resolve with the correct content type and that the returned content matches the files in this repository.
+Tests run automatically on pull requests and monthly via GitHub Actions.
+
+To run the tests locally (requires Node.js 24+):
+
+```bash
+node test-redirects.js
+```
+
+To also print a full unified diff for any failing content checks and save the local and remote content to files:
+
+```bash
+node test-redirects.js --save-diff
+```
+
+The diff is printed inline in the terminal output and also saved as a `.diff` file alongside the `.local` and `.remote` content files.
+All files are written to `test-diff-output/` and are not tracked by git.
