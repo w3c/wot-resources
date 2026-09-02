@@ -1,5 +1,4 @@
 // Run with: node test-redirects.js
-// Requires Node.js 18+ (uses built-in fetch)
 
 const fs = require("fs");
 const path = require("path");

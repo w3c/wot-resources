@@ -37,7 +37,7 @@ The redirection rules are managed at <https://github.com/w3c/ns>.
 A test script verifies that the W3C redirect URLs resolve with the correct content type and that the returned content matches the files in this repository.
 Tests run automatically on pull requests and monthly via GitHub Actions.
 
-To run the tests locally (requires Node.js 24+):
+To run the tests locally:
 
 ```bash
 node test-redirects.js
