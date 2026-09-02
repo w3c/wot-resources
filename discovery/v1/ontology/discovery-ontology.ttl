@@ -9,7 +9,7 @@
 @prefix discovery: <https://www.w3.org/2022/wot/discovery-ontology#> .
 @prefix td: <https://www.w3.org/2019/wot/td#> .
 @prefix did: <https://www.w3.org/ns/did#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @base <https://www.w3.org/2022/wot/discovery-ontology#> .
 
 <https://www.w3.org/2022/wot/discovery-ontology#> rdf:type owl:Ontology ;
