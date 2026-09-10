@@ -85,8 +85,70 @@
         span.indent {
             margin-left: 2em;
         }
-    
+
+        /* ds-selector-tabs: tab button styling */
+        .ds-selector-tabs .selectors {
+            padding: 0;
+            border-bottom: 1px solid #ccc;
+            height: 28px;
+        }
+        .ds-selector-tabs .selectors button {
+            display: inline-block;
+            min-width: 54px;
+            text-align: center;
+            font-size: 11px;
+            font-weight: bold;
+            height: 27px;
+            padding: 0 8px;
+            line-height: 27px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;
+            color: #666;
+            border: 1px solid transparent;
+            background: none;
+            cursor: pointer;
+        }
+        .ds-selector-tabs .selectors button.selected {
+            color: #202020 !important;
+            border: 1px solid #ccc;
+            border-bottom: 1px solid #fff !important;
+        }
+        .ds-selector-tabs .selectors button:hover {
+            color: #202020;
+        }
+        /* hide all pre/table panels by default, show only .selected */
+        .ds-selector-tabs pre,
+        .ds-selector-tabs table {
+            display: none;
+        }
+        @media print {
+            .ds-selector-tabs pre,
+            .ds-selector-tabs table {
+                display: block;
+            }
+        }
+        .ds-selector-tabs pre.selected,
+        .ds-selector-tabs table.selected {
+            display: block;
+        }
+
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.ds-selector-tabs .selectors button[data-selects]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var aside = btn.closest('.ds-selector-tabs');
+          var target = btn.dataset.selects;
+          aside.querySelectorAll('.selectors button').forEach(function (b) { b.classList.remove('selected'); });
+          btn.classList.add('selected');
+          aside.querySelectorAll('pre, table').forEach(function (el) {
+            if (el.classList.contains(target)) { el.classList.add('selected'); }
+            else { el.classList.remove('selected'); }
+          });
+        });
+      });
+    });
+  </script>
   <meta name="color-scheme" content="light">
   <meta name="description" content=
   "The Thing Description (TD) ontology is an RDF axiomatization of the TD information model, one of the building blocks of the Web of Things (WoT). Besides providing an alternative to the standard JSON representation format for TD documents, the TD ontology can also be used to process contextual information on Things and for alignments with other WoT-related ontologies.">
@@ -136,12 +198,12 @@
     {
       "name": "María Poveda Villalón",
       "company": "Universidad Politécnica de Madrid",
-      "companyURL": "http://www.upm.es/"
+      "companyURL": "https://www.upm.es/"
     },
     {
       "name": "Sebastian Käbisch",
       "company": "Siemens AG",
-      "companyURL": "http://www.siemens.com/"
+      "companyURL": "https://www.siemens.com/"
     }
   ],
   "edDraftURI": "https://www.w3.org/2019/wot/td",
@@ -212,13 +274,13 @@
         <dd class="editor p-author h-card vcard">
           <span class="p-name fn">María Poveda Villalón</span>
           (<a class="p-org org h-org" href=
-          "http://www.upm.es/">Universidad Politécnica de
+          "https://www.upm.es/">Universidad Politécnica de
           Madrid</a>)
         </dd>
         <dd class="editor p-author h-card vcard">
           <span class="p-name fn">Sebastian Käbisch</span>
           (<a class="p-org org h-org" href=
-          "http://www.siemens.com/">Siemens AG</a>)
+          "https://www.siemens.com/">Siemens AG</a>)
         </dd>
         <dt>Ontology in RDF</dt>
         <dd>
@@ -1451,7 +1513,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/URL">schema:URL</a></code></td>
+              "https://schema.org/URL">schema:URL</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1476,7 +1538,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Text">schema:Text</a></code></td>
+              "https://schema.org/Text">schema:Text</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1513,7 +1575,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Text">schema:Text</a></code></td>
+              "https://schema.org/Text">schema:Text</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1584,7 +1646,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Boolean">schema:Boolean</a></code></td>
+              "https://schema.org/Boolean">schema:Boolean</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1613,7 +1675,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Boolean">schema:Boolean</a></code></td>
+              "https://schema.org/Boolean">schema:Boolean</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1640,7 +1702,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Boolean">schema:Boolean</a></code></td>
+              "https://schema.org/Boolean">schema:Boolean</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1670,7 +1732,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Boolean">schema:Boolean</a></code></td>
+              "https://schema.org/Boolean">schema:Boolean</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1714,7 +1776,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Text">schema:Text</a></code></td>
+              "https://schema.org/Text">schema:Text</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1738,7 +1800,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Text">schema:Text</a></code></td>
+              "https://schema.org/Text">schema:Text</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -1771,7 +1833,7 @@
             <tr>
               <td>Range includes</td>
               <td><code><a href=
-              "http://schema.org/Text">schema:Text</a></code></td>
+              "https://schema.org/Text">schema:Text</a></code></td>
             </tr>
           </tbody>
         </table>
@@ -2200,7 +2262,7 @@
     vocabularies, in particular with SOSA [<cite><a class="bibref"
     data-link-type="biblio" href="#bib-vocab-ssn" title=
     "Semantic Sensor Network Ontology">vocab-ssn</a></cite>] and
-    <a href="http://schema.org">schema.org</a>. Alignments between
+    <a href="https://schema.org">schema.org</a>. Alignments between
     these vocabularies are provided in a human-readable way in the
     following.</p>
     <section id="sosa">
@@ -2405,7 +2467,7 @@
         "false"><code class="hljs">{
                 "@context": {
                     "https://www.w3.org/2019/wot/td/v1",
-                    {"@base": "http://example.org/MyLampThing/"}
+                    {"@base": "https://example.org/MyLampThing/"}
                 },
                 "id": "urn:dev:ops:32473-WoTLamp-1234",
                 "title": "MyLampThing",
@@ -2438,7 +2500,7 @@
         "hljs">&lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#hasActionAffordance&gt; _:b0 .
             &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#hasEventAffordance&gt; _:b2 .
             &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#hasPropertyAffordance&gt; _:b5 .
-            &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#hasSecurityConfiguration&gt; &lt;http://example.org/MyLampThing/basic_sc&gt; .
+            &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#hasSecurityConfiguration&gt; &lt;https://example.org/MyLampThing/basic_sc&gt; .
             &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#definesSecurityScheme&gt; _:b7 .
             &lt;urn:dev:ops:32473-WoTLamp-1234&gt; &lt;https://www.w3.org/2019/wot/td#title&gt; "MyLampThing" .
             _:b0 &lt;https://www.w3.org/2019/wot/td#name&gt; "toggle" .
@@ -2456,7 +2518,7 @@
             _:b6 &lt;https://www.w3.org/2019/wot/hypermedia#hasTarget&gt; "https://mylamp.example.com/status" .
             _:b7 &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt; &lt;https://www.w3.org/2019/wot/security#BasicSecurityScheme&gt; .
             _:b7 &lt;https://www.w3.org/2019/wot/security#in&gt; "header" .
-            _:b7 &lt;https://www.w3.org/2019/wot/td#hasConfigurationInstance&gt; &lt;http://example.org/MyLampThing/basic_sc&gt; .</code></pre>
+            _:b7 &lt;https://www.w3.org/2019/wot/td#hasConfigurationInstance&gt; &lt;https://example.org/MyLampThing/basic_sc&gt; .</code></pre>
       </aside>
       <p>The RDF dataset contains the corresponding Thing
       Description IRIs as defined in this document. This IRI
@@ -2589,11 +2651,11 @@
             "type": "boolean",
             "forms": [
                 {
-                    "href": "http://example.org/status",
+                    "href": "https://example.org/status",
                     "op": "writeproperty"
                 },
                 {
-                    "href": "http://example.org/status",
+                    "href": "https://example.org/status",
                     "op": "observeproperty"
                 }
             ]
@@ -2609,7 +2671,7 @@
             "input": { "type": "boolean" },
             "forms": [
                 {
-                    "href": "http://example.org/status/change",
+                    "href": "https://example.org/status/change",
                     "op": "invokeaction"
                 }
             ]
@@ -2625,7 +2687,7 @@
             "data": { "type": "boolean" },
             "forms": [
                 {
-                    "href": "http://example.org/status/changed",
+                    "href": "https://example.org/status/changed",
                     "op": "subscribeevent"
                 }
             ]
@@ -2800,13 +2862,13 @@ ex:TemperatureAffordance rdfs:subClassOf [
         <dt id="bib-smartm2m">[smartM2M]</dt>
         <dd>
           <a href=
-          "http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf">
+          "https://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf">
           <cite>ETSI TS 103 264 V2.1.1 (2017-03): SmartM2M; Smart
           Appliances; Reference Ontology and oneM2M
           Mapping</cite></a>. ETSI. March 2017. Published. URL:
           <a href=
-          "http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf">
-          http://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf</a>
+          "https://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf">
+          https://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf</a>
         </dd>
         <dt id="bib-vocab-ssn">[vocab-ssn]</dt>
         <dd>

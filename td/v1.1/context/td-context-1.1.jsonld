@@ -25,7 +25,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -604,7 +604,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -734,7 +734,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -864,7 +864,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -994,7 +994,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -1124,7 +1124,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {
@@ -1254,7 +1254,7 @@
         "wotsec": "https://www.w3.org/2019/wot/security#",
         "hctl": "https://www.w3.org/2019/wot/hypermedia#",
         "dct": "http://purl.org/dc/terms/",
-        "schema": "http://schema.org/",
+        "schema": "https://schema.org/",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "@vocab": "https://www.w3.org/2019/wot/json-schema#",
         "DataSchema": {

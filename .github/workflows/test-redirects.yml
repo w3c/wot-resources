@@ -1,0 +1,16 @@
+name: Test Redirects
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 8 1 * *" # first of every month at 08:00 UTC
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - run: node test-redirects.js
